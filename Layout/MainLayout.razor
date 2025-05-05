@@ -1,0 +1,32 @@
+﻿@inherits LayoutComponentBase
+<div class="page">
+@*     <div class="sidebar">
+        <NavMenu />
+    </div> *@
+
+	<div class="top-row ps-3 navbar navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="">PokemonBlazor</a>
+		</div>
+	</div>
+	<nav class="nav flex-row">
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="" Match="NavLinkMatch.All">Home</NavLink>
+		</div>
+		<div class="nav-item px-3">
+			<NavLink class="nav-link" href="pokemon/list">List</NavLink>
+		</div>
+	</nav>
+
+
+	<main class="flex-row">
+		@*         <div class="top-row px-4">
+        <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+    </div> *@
+
+		<article class="content px-4">
+			@Body
+		</article>
+	</main>
+	
+</div>
